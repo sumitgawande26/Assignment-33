@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrray introduction</title>
+</head>
+<body>
+    <h1>
+        JavaScript
+    </h1>
+    <h2>
+        Introduction to Array
+    </h2>
+    <script>
+        const arr = ["Sumit","kalash","chinmay","swapnil"]
+        console.log(arr);
+        console.log(arr.length);
+
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[2]);
+        console.log(arr[3]);
+
+        arr.push("Vishal");
+        console.log(`After Push into array:${arr}`);
+        console.log(arr);
+
+        arr.push(9,16,"kala",4,1);
+        console.log(arr);
+
+        arr.pop();
+        console.log(`After pop an element from array: {${arr}}`);
+        console.log(arr);
+
+        arr.shift();
+        console.log(arr);
+
+        arr.unshift("sumit");
+        console.log(arr);
+
+        console.log("Index Position of kalash in Array is :",arr.indexOf("kalash"));
+
+        console.log("Whether manish is present in array or not :",arr.includes("Pravin"));
+
+        let listOfArr = arr.join('!');
+        console.log("After using join()property =",listOfArr);
+        console.log("Check whether arr is array or not =",Array.isArray(arr));
+
+        console.log(arr.reverse());
+
+        console.log(arr.sort());
+
+        console.log(arr.splice(2,3));
+
+        console.log("After deletion by using .splice() =",arr);
+
+        console.log(arr.splice(1,1,"Sumit"));
+
+        console.log("After deletion with replacement by using .splice() =",arr);
+
+    </script>
+</body>
+</html>
